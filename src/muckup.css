@@ -1,0 +1,146 @@
+.muckup-body-container{
+    width: 100%;
+    height: 90%;
+}
+.muckup-body-main{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.muckup-img-veiw{
+    width: auto;
+    height: 10%;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+.muckup-main{
+    width: 100%;
+    height: 80%;
+    /* position: relative; */
+}
+.muckup-main-design{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+.muckup-main-img{
+    /* float: left; */
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.muckup-main-img-container{
+    width: 80%;
+    height: 90%;
+    /* margin: auto; */
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.muckup-div-sample{
+    width: 100%;
+    height: 100%;
+}
+.muckup-main-img-edits{
+    width: 80%;
+    height: 100%;
+    background-color: azure;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+}
+.muckup-main-img-edite-muckup{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: aquamarine; */
+}
+.muckup-img{
+    width: 100%;
+    height: auto;
+}
+.muckup-main-img-edite-design{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* border: 1px dashed black; */
+    padding: 10px;
+    cursor: nesw-resize;
+    touch-action: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* cursor: move; */
+
+    /* cursor: cell; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: darkcyan; */
+}
+.muckup-img-design{
+    width: 80%;
+    height: 80%;
+    touch-action: none;
+    cursor: move;
+    /* cursor: nesw-resize; */
+    position: absolute;
+    /* margin: auto; */
+}
+.muckup-img-design-contain{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.muckup-design-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.muckup-design-img-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* .muckup-main-edite{
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+
+} */
+.muckup-main-preview-design{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* position: absolute; */
+}
+.muckup-img-preview{
+    width: auto;
+    height: 10%;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.selection-muckup{
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+}

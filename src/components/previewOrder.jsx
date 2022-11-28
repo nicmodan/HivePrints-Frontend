@@ -19,7 +19,7 @@ const Preview =({handelClick})=>{
     // console.log(props)
     // console.log(orders)
 
-    const {firstName, lastName, email, phone, cityState, address, location} = orders
+    const {firstName, lastName, email, phone, cityState, mainAddress, location} = orders
     const {catlog, number, name, cost, images, img_url} = orders
 
     // console.log(firstName, lastName, email, phone, cityState, address)
@@ -30,11 +30,11 @@ const Preview =({handelClick})=>{
         // const formData = new FormData()
         // formData.append("orders", orders)
         // postOrders(formData)
-        console.log((Number(cost.replace("₦", ""))*720)*100)
+        console.log((Number(cost.replace("₦", "")))*100)
         const paystack = new PaystackPop()
         paystack.newTransaction({
             key:"pk_live_74f45a48ac13ad19e3826bed65ba8200702eb69e",
-            amount: (Number(cost.replace("₦", ""))*720)*100,
+            amount: (Number(cost.replace("₦", "")))*100,
             email: email,
             firstname: firstName,
             lastname: lastName, 
@@ -52,7 +52,7 @@ const Preview =({handelClick})=>{
                 <Navbar.Brand href="#home" className="preview-body-img">
                     <img src={Logo}  alt="HIVE LOGO" />
                 </Navbar.Brand>
-                <div className='location-position'>
+                {location && <div className='location-position'>
                     {" "}
                     <ReactCountryFlag
                             countryCode={location.country_code}
@@ -66,7 +66,7 @@ const Preview =({handelClick})=>{
                     {"  "}
                     {location.country_name}
 
-                </div>
+                </div>}
             </Navbar>
             <Row style={{paddingTop: 20}}>
                 
@@ -137,7 +137,7 @@ const Preview =({handelClick})=>{
                                 </p>
                                 <div className="preview-info-main-p">
                                     <p>
-                                        {address}
+                                        {mainAddress}
                                     </p>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@ const Preview =({handelClick})=>{
                             </div>
                             <div className='continer-body-info-form-address-button'>
                                 <div className='design-select-label-button-left'>
-                                    <Button onClick={handelClick} variant="primary">Preview Order</Button>
+                                    <Button onClick={handelClick} variant="primary">Back</Button>
                                 </div>
                                 <div className='design-select-label-button-right'>
                                     <Button onClick={proccedPayment} variant="success">Procced Paymen</Button>

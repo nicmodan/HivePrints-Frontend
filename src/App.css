@@ -27,13 +27,17 @@
   50%{background-position:100% 51%}
   100%{background-position:0% 50%}
 }
+.contain{
+  /* height: 100%; */
+}
 .continer-body-img{
   display: flex;
   align-items: center;
   justify-content: center;
+  /* height: 80%; */
 }
 .continer-body-img img{
-  width: auto;
+  width: 80%;
   height: auto;
 }
 .continer-body-info{
@@ -259,7 +263,7 @@
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #eee;
+  background-color: #a7a7a7;
   border-radius: 50%;
 }
 
@@ -499,4 +503,34 @@
 .preview-order-main-p{
   border-bottom: 2px solid whitesmoke;
   padding: 2px 0 0 10px;
+}
+/* ********************* MUCKUP BODY ********************* */
+/* .muckup-body{muckup
+
+} */
+/* input{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+} */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  .continer-body-info-form {
+      width: 88%;
+      min-height: 135px;
+  }
+  .continer-info {
+        padding: 7px;
+        font-size: 14px;
+  }
+  .select-product-type {
+        width: 95%;
+        margin-left: 5px;
+
+  }
+  .continer-body-img{
+    height: 20%;
+  }
+  .continer-body-info{
+    height: 50%;
+  }
 }
